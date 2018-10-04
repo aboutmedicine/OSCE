@@ -1,0 +1,36 @@
+<h1>Edit OSCE</h1>
+<div class="container">
+    <form ng-submit="updateOsce()" ng-init="getOsce()">
+        <div class="col-25">
+            <label>Title</label>
+        </div>
+        <div class="col-75">
+            <input type="text" class="form-control" ng-model="osce.title" placeholder="Title">
+        </div>
+        <div class="col-25">
+            <label>Topic</label>
+        </div>
+        <div class="col-75">
+            <select ng-model="osce.topic" class="form-control">
+                <option value="Obstetrics">Obstetrics</option>
+                <option value="Paediatrics">Paediatrics</option>
+                <option value="Aged Care">Aged Care</option>
+                <option value="General Practise">General Practise</option>
+                <option value="Mental Health">Mental Health</option>
+            </select>
+        </div>
+        <div class="col-25">
+            <label>Name</label>
+        </div>
+        <div class="col-75">
+            <input type="text" class="form-control" ng-model="osce.name" placeholder="Name">
+        </div>
+        <div class="col-25">
+            <label>Age</label>
+            </div>
+        <div class="col-75">
+            <input class="form-control" ng-model="osce.age" placeholder="Age">
+        </div>
+        <button type="submit" class="button">Submit</button>
+    </form>
+</div>

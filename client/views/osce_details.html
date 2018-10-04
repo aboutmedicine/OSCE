@@ -1,0 +1,18 @@
+<link href="/client/main.css" rel="stylesheet" />
+<div ng-init="getOsce()">
+    <h1>{{osce.title}}</h1>
+    <div class="container">
+        <p>{{osce.title}}</p>
+        <ul>
+            <li>Topic: {{osce.topic}}</li>
+            <li>Name: {{osce.name}}</li>
+            <li>Age: {{osce.age}}</li>
+        </ul>
+        <div class="navigation">
+            <a href="#/osces/edit/{{osce._id}}">Edit</a>
+            <a href="#" ng-click="removeOsce(osce._id)">Delete</a>
+            <a href="#/osces">Return Home</a>
+        </div>
+
+    </div>
+</div>
