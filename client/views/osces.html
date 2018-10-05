@@ -2,7 +2,7 @@
 <div class="container">
     <div ng-init="getOsces()">
 
-        <div ng-repeat="osce in osces">
+        <div ng-repeat="osce in osces | orderBy:'+':true">
             <div class="grid-container">
                 <a class="h3" href="#/osces/details/{{osce._id}}">{{osce.title}}</a>
                 <p class="date">{{osce.create_date | date}}</p>

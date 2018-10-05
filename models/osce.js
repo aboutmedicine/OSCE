@@ -70,6 +70,12 @@ const osceSchema = mongoose.Schema({
     concern: {
         type: String,
     },
+    question1: {
+        type: String,
+    },
+    question2: {
+        type: String,
+    },
     create_date: {
         type: Date,
         default: Date.now

@@ -98,7 +98,7 @@
             <label><strong>A</strong>ssociated</label>
         </div>
         <div class="col-75">
-            <input ng-model="osce.associated" placeholder="Any other symptoms that you've noticed?">
+            <input ng-model="osce.associated" placeholder="Have you noticed any other symptoms?">
         </div>
 
         <div class="col-25">
@@ -175,6 +175,24 @@
             <input ng-model="osce.concern" placeholder="The patient's main concern">
         </div>
 
-        <button type="submit" class="button">Submit</button>
+        <div class="col-100">
+            <h4>Examiner</h4>
+        </div>
+
+        <div class="col-25">
+            <label>Question 1</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.question1" placeholder="e.g. What is the most likely Dx?">
+        </div>
+
+        <div class="col-25">
+            <label>Question 2</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.question2" placeholder="e.g. What else would you like to do to confirm this Dx?">
+        </div>
+
+        <button type="submit" class="submitbutton">Submit</button>
     </form>
 </div>

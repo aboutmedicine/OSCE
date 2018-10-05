@@ -21,7 +21,6 @@ h3 {
     font-size: 1.5em;
     line-height: .5;
     font-weight: 300;
-    padding-left: 20px;
     margin-bottom: 40px;
 }
 
@@ -57,7 +56,7 @@ p3 {
     display: block;
     font-size: 1.2em;
     width: 100%;
-    margin-left: 20px;
+    margin-left: 15px;
     color: #222;
     text-align: center;
     resize: vertical;
@@ -92,6 +91,7 @@ select {
     padding: 20px 40px 20px 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     min-width: 500px;
 }
 
@@ -137,7 +137,8 @@ select {
 
 
 input:focus,
-select:focus {
+select:focus,
+button:focus {
     outline: none;
 }
 
@@ -162,18 +163,18 @@ button:hover {
     color: #f3f3f3;
 }
 
-.navbutton{
+.navbutton {
     position: absolute;
     right: 0;
     top: 0;
-    margin:10px;
+    margin: 10px;
     border-radius: 50%;
     border: none;
-    padding: 5px 10px;
-    color: #eee;
+    padding: 7px 12px 7px 11px;
+    color: #ddd;
     background-color: #555;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1;
     font-family: 'Avenir Next';
     cursor: pointer;
