@@ -1,36 +1,180 @@
 <h1>Add OSCE</h1>
 <div class="container">
     <form ng-submit="addOsce()">
+
         <div class="col-25">
             <label>Title</label>
         </div>
         <div class="col-75">
-            <input type="text" class="form-control" ng-model="osce.title" placeholder="Title">
+            <input ng-model="osce.title" placeholder="Title">
         </div>
+
         <div class="col-25">
-            <label>Topic</label>
+            <label>Description</label>
         </div>
         <div class="col-75">
-            <select ng-model="osce.topic" class="form-control">
-                <option value="Obstetrics">Obstetrics</option>
-                <option value="Paediatrics">Paediatrics</option>
+            <input ng-model="osce.description" placeholder="What the candidate reads on the door goes here.">
+        </div>
+
+        <div class="col-25">
+            <label>Rotation</label>
+        </div>
+        <div class="col-75">
+            <select ng-model="osce.category">
                 <option value="Aged Care">Aged Care</option>
                 <option value="General Practise">General Practise</option>
                 <option value="Mental Health">Mental Health</option>
+                <option value="Obstetrics">Obstetrics</option>
+                <option value="Paediatrics">Paediatrics</option>
             </select>
         </div>
+
+        <div class="col-100">
+            <h4>Pt</h4>
+        </div>
+
+
         <div class="col-25">
             <label>Name</label>
         </div>
         <div class="col-75">
-            <input type="text" class="form-control" ng-model="osce.name" placeholder="Name">
+            <input ng-model="osce.name" placeholder="Name">
         </div>
+
         <div class="col-25">
             <label>Age</label>
-            </div>
-        <div class="col-75">
-            <input class="form-control" ng-model="osce.age" placeholder="Age">
         </div>
-        <button type="submit" class="button">Submit</button>
+        <div class="col-75">
+            <input ng-model="osce.age" placeholder="Age">
+        </div>
+
+        <div class="col-25">
+            <label>Background</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.background" placeholder="e.g. pastry chef / stay-at-home dad / retiree">
+        </div>
+
+        <div class="col-100">
+            <h4>Hx</h4>
+        </div>
+
+        <div class="col-25">
+            <label>Issue</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.issue" placeholder="Tell me what's brought you in today.">
+        </div>
+
+        <div class="col-25">
+            <label><strong>O</strong>nset</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.onset" placeholder="When did this begin?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>P</strong>rogress</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.progress" placeholder="How it has progressed since?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>E</strong>xacerbating</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.exacerbating" placeholder="Has anything made it worse?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>R</strong>elieving</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.relieving" placeholder="What makes it better?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>A</strong>ssociated</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.associated" placeholder="Any other symptoms that you've noticed?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>T</strong>iming</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.timing" placeholder="Is it worse at any particular time of day?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>E</strong>pisodes</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.episodes" placeholder="Have you ever had episodes like this in the past?">
+        </div>
+
+        <div class="col-25">
+            <label><strong>S</strong>everity</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.severity" placeholder="How is it impacting your life at the moment?">
+        </div>
+
+        <div class="col-25">
+            <label>Systems</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.systems" placeholder="Systemic enquiry">
+        </div>
+
+        <div class="col-100">
+            <h4><strong>++</strong></h4>
+        </div>
+
+        <div class="col-25">
+            <label>PMHx</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.pmhx" placeholder="Past medical history">
+        </div>
+
+        <div class="col-25">
+            <label>Medications</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.medications" placeholder="Medications">
+        </div>
+
+        <div class="col-25">
+            <label>Allergies</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.allergies" placeholder="Allergies">
+        </div>
+
+        <div class="col-25">
+            <label>FHx</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.fhx" placeholder="Family history">
+        </div>
+
+        <div class="col-25">
+            <label>SHx</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.shx" placeholder="Social history - employment, hobbies, alcohol and drug use">
+        </div>
+
+        <div class="col-25">
+            <label>Concern</label>
+        </div>
+        <div class="col-75">
+            <input ng-model="osce.concern" placeholder="The patient's main concern">
+        </div>
+
+        <button type="submit" class="submitbutton">Submit</button>
     </form>
 </div>

@@ -13,13 +13,33 @@
 <body ng-app="myApp">
 
     <div class="navigation">
-       <a href="#/">Home</a>
-       <a href="#/osces/add">Write your own</a>
+        <a href="#/">Home</a>
+        <a href="#/osces/add">Write your own</a>
     </div>
-    
+
     <div ng-view></div>
 
 
+    <div id="mySidenav" class="sidenav">
+        <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Aged Care</a>
+        <a href="#">General Practise</a>
+        <a href="#">Mental Health</a>
+        <a href="#">Obstetrics</a>
+        <a href="#">Paediatrics</a>
+    </div>
+    <button class="navbutton" onclick="openNav()">+</button>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    
     <script src='app.js'></script>
     <script src='/controllers/osces.js'></script>
 

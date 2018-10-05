@@ -1,13 +1,158 @@
-<link href="/client/main.css" rel="stylesheet" />
 <div ng-init="getOsce()">
     <h1>{{osce.title}}</h1>
+    <h3 class="navigation">{{osce.category}}</h3>
+
     <div class="container">
-        <p>{{osce.title}}</p>
-        <ul>
-            <li>Topic: {{osce.topic}}</li>
-            <li>Name: {{osce.name}}</li>
-            <li>Age: {{osce.age}}</li>
-        </ul>
+
+        <div class="col-100">
+            <p3>{{osce.description}}</p3>
+        </div>
+
+        <div class="col-100">
+            <h4>Pt</h4>
+        </div>
+
+        <div class="col-25">
+            <label>Name</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.name}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Age</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.age}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Background</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.background}}</p2>
+        </div>
+
+        <div class="col-100">
+            <h4>Hx</h4>
+        </div>
+
+        <div class="col-25">
+            <label>Issue</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.issue}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>O</strong>nset</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.onset}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>P</strong>rogress</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.progress}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>E</strong>xacerbating</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.exacerbating}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>R</strong>elieving</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.relieving}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>A</strong>ssociated</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.associated}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>T</strong>iming</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.timing}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>E</strong>pisodes</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.episodes}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label><strong>S</strong>everity</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.severity}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Systems</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.systems}}</p2>
+        </div>
+
+        <div class="col-100">
+            <h4><strong>++</strong></h4>
+        </div>
+
+        <div class="col-25">
+            <label>PMHx</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.pmhx}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Medications</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.medications}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Allergies</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.allergies}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>FHx</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.fhx}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>SHx</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.shx}}</p2>
+        </div>
+
+        <div class="col-25">
+            <label>Concern</label>
+        </div>
+        <div class="col-75">
+            <p2>{{osce.concern}}</p2>
+        </div>
+
         <div class="navigation">
             <a href="#/osces/edit/{{osce._id}}">Edit</a>
             <a href="#" ng-click="removeOsce(osce._id)">Delete</a>
