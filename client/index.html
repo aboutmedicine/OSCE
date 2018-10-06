@@ -7,7 +7,6 @@
     <title>OSCE</title>
     <script src='https://code.angularjs.org/1.4.7/angular.js'></script>
     <script src='https://code.angularjs.org/1.4.7/angular-route.js'></script>
-
 </head>
 
 <body ng-app="myApp">
@@ -19,27 +18,17 @@
 
     <div ng-view></div>
 
-
-    <div id="mySidenav" class="sidenav">
-        <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="mySidenav" class="sidenav" ng-class="isNavOpen ? 'w-250':'w-0'">
+        <a href="" class="closebtn" ng-click="isNavOpen=!isNavOpen">&times;</a>
         <a href="#/geris">Aged Care</a>
         <a href="#/gp">General Practise</a>
         <a href="#/psych">Mental Health</a>
         <a href="#/obs">Obstetrics</a>
         <a href="#/paeds">Paediatrics</a>
     </div>
-    <button class="navbutton" onclick="openNav()">&#60;</button>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
+    <button class="navbutton" ng-click="isNavOpen=!isNavOpen">&#60;</button>
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-        }
-    </script>
-    
-    
+
     <script src='app.js'></script>
     <script src='/controllers/osces.js'></script>
 
