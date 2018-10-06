@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 Osce =require('./models/osce');
 
 // Connect to Mongoose
-mongoose.connect('mongodb://localhost/oscedb');
+mongoose.connect('mongodb://Reuben_Schmidt:c4jiZckLJ9S8byc@ds223653.mlab.com:23653/heroku_ngp18hw5');
 var db = mongoose.connection;
 
 app.get('/', (req, res) => {
