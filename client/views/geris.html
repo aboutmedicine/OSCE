@@ -2,7 +2,7 @@
 <div class="container">
     <div ng-init="getOsces()">
 
-        <div ng-repeat="osce in osces | filter:{category: 'Aged Care'}">
+        <div ng-repeat="osce in osces | filter:{category: 'Aged Care'} | orderBy:'-create_date'">
             <div class="grid-container">
                 <a class="h3" href="#/osces/details/{{osce._id}}">{{osce.title}}</a>
                 <p class="date">{{osce.create_date | date}}</p>
