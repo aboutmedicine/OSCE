@@ -131,7 +131,11 @@ module.exports.updateOsce = (id, osce, options, callback) => {
         allergies: osce.allergies,
         fhx: osce.fhx,
         shx: osce.shx,
-        concern: osce.concern
+        concern: osce.concern,
+        question1: osce.question1,
+        answer1: osce.answer1,
+        question2: osce.question2,
+        answer2: osce.answer2,
     }
     Osce.findOneAndUpdate(query, update, options, callback);
 }
